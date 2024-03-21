@@ -41,17 +41,17 @@ function main() {
             altura_mais_alta = altura_modelo
         }
 
-        if (altura_modelo < altura_mais_baixa) {
+        else if (altura_modelo < altura_mais_baixa) {
             modelo_mais_baixa = nome_da_modelo
             altura_mais_baixa = altura_modelo
         }
 
-        if (peso_da_modelo > peso_mais_pesada) {
+        else if (peso_da_modelo > peso_mais_pesada) {
             modelo_mais_pesada = nome_da_modelo
             peso_mais_pesada = peso_da_modelo
         }
 
-        if (peso_da_modelo < peso_mais_leve) {
+        else if (peso_da_modelo < peso_mais_leve) {
             modelo_mais_leve = nome_da_modelo
             peso_mais_leve = peso_da_modelo
         }
