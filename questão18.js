@@ -3,7 +3,7 @@
 //crescendo a uma taxa anual de 1.35%, Escreva um algoritmo que determine quantos anos serão
 //necessários, para que a população da cidade A ultrapasse a população da cidade B.
 
-import {print, pede_numero_positivo, pede_numero_positivo_com_zero} from "../Ajuda/funções.js"
+import {print, pede_numero_positivo, pede_numero_positivo_com_zero} from "../Ajuda/funções.js";
 
 function main(){
     print(`
@@ -20,8 +20,8 @@ function main(){
     //Processamento
     let anos = 0
     while(CidadeA < CidadeB){
-        CidadeA *= (taxa_crescimento_cidadeA / 100)
-        CidadeB *= (taxa_crescimento_cidadeB / 100)
+        CidadeA += CidadeA * (taxa_crescimento_cidadeA / 100)
+        CidadeB += CidadeB * (taxa_crescimento_cidadeB / 100)
         anos ++
     }
 
@@ -36,6 +36,4 @@ function main(){
     `
     print(resposta)
 }
-//Funçôes
-
 main()
