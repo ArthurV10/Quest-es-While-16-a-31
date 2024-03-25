@@ -25,7 +25,7 @@ function main() {
         const taxa_juros_mensal = pede_numero_positivo("Digite a taxa de juros mensal (em %): ");
 
         // Processamento
-        while (meses % 12 !== 0) {
+        while (meses < 12) {
             saldo_inicial += investido_por_mes;
             saldo_inicial += saldo_inicial * (taxa_juros_mensal / 100);
             meses++;
